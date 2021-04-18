@@ -1,0 +1,4 @@
+dealer:  # unique ID
+    description: A dealer stands in his booth with a fine collection of wooden bows.
+    name: dealer
+    initlocation: marketplace  # the ID of the room where the dealer is located

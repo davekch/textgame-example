@@ -1,0 +1,31 @@
+diamond:  # unique identifyer
+    description: A sparkling diamond lies around!
+    name: sparkling diamond  # name that is displayed in the inventory
+    ID: diamond  # name that is used in-game for interacting
+    value: 12
+    initlocation: field_0
+
+boulder:
+    description: A large boulder lies on the ground.
+    name: boulder
+    value: 0
+    initlocation: field_1
+    takable: false
+
+wand:
+    description: A wand lies around.
+    name: wand
+    value: 0
+    initlocation: field_1
+
+bow:
+    description: A wooden bow lies on the ground.
+    name: bow
+    value: 12
+    initlocation: storage_room
+
+grail:
+    description: A golden grail stands there.
+    name: grail
+    value: 10
+    initlocation: storage_room

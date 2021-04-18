@@ -1,0 +1,32 @@
+field_0:
+    # long description
+    descript: You are in a wide rocky pit. An aisle leads upwards to the north.
+    # short description, will be printed if the player has already been here
+    sdescript: You're in the rocky pit.
+    # how much the player's score will increase when this room is first visited
+    value: 0
+    # these messages will be printed if the player tries to go in the corresponding direction
+    errors:
+        south: The slope is too steep here.
+        east: The slope is too steep here.
+    # locked: {"north": {"closed": True, "key": 123}}
+    hint: here's my special hint for you.
+    hint_value: 7
+    doors: {"north": "field_1", "up": "field_1", "west": "marketplace"}
+    # this will only be printed if the player leaves this room in the given direction
+    dir_descriptions: {"up": "You spread your wings and start to fly."}
+
+field_1:
+    descript: You are standing in the middle of a wide open field. In the west the silhouette of an enormeous castle cuts the sky. A slippery aisle leads downwards to the south.
+    sdescript: You are in a wide open field.
+    doors: {"south": "field_0", "down": "field_0"}
+
+hidden_place:
+    descript: You are in a secret room! Magic skribblings decorate the walls.
+    sdescript: You are in the secret room.
+    value: 10
+
+marketplace:
+    descript: You are at the marketplace in the middle of a small village.
+    sdescript: You are at the marketplace.
+    doors: {"east": "field_0"}
